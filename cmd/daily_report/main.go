@@ -2,11 +2,12 @@ package main
 
 import (
 	"fmt"
-	"github.com/mitsu9/hawkeye/internal/toggl"
 	"log"
 	"os"
 	"strconv"
 	"time"
+
+	"github.com/mitsu9/hawkeye/internal/toggl"
 )
 
 func main() {
