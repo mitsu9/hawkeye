@@ -26,7 +26,7 @@ type Workspace struct {
 }
 
 func (c Client) GetWorkspaces() []Workspace {
-	url := "https://www.toggl.com/api/v8/workspaces"
+	url := "https://api.track.toggl.com/api/v8/workspaces"
 	bytes := c.getRequest(url, nil)
 
 	var workspaces []Workspace

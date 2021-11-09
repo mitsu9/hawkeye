@@ -41,7 +41,7 @@ type JsonSummaryDataItem struct {
 }
 
 func (c Client) GetSummary(ws *Workspace, since string, until string) []SummaryItem {
-	url := "https://toggl.com/reports/api/v2/summary"
+	url := "https://api.track.toggl.com/reports/api/v2/summary"
 	params := map[string]string{
 		"workspace_id": strconv.Itoa(ws.Id),
 		"since":        since,
